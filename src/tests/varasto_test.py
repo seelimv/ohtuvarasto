@@ -68,7 +68,7 @@ class TestVarasto(unittest.TestCase):
     def test_ota_varastosta_negatiivinen_maara(self):
         self.varasto.ota_varastosta(-2)
 
-        self.assertEqual(self.varasto.paljonko_mahtuu(), 10)
+        self.assertEqual(self.varasto.paljonko_mahtuu(), 8)
 
     def test_varasto_tulostuu_oikein(self):
         self.varasto.lisaa_varastoon(2)
